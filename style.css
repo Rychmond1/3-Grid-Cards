@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(0, 0%, 95);
+  text-align: center;
+  margin-top: 8%;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  padding: 2rem 0;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  padding-bottom: 5.3rem;
+  width: 70%;
+}
+button {
+  padding: 0.9rem 1.4rem;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+button:hover .p1 {
+  color: white;
+}
+button:hover .p2 {
+  color: white;
+}
+button:hover .p3 {
+  color: white;
+}
+.p1 {
+  color: hsl(31, 77%, 52%);
+}
+.p2 {
+  color: hsl(184, 100%, 22%);
+}
+.p3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.container {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+.container div {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.sedan-div {
+  border-radius: 9px 0 0 9px;
+  background: hsl(31, 77%, 52%);
+}
+.suv-div {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury-div {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 9px 9px 0;
+}
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  color: hsl(184, 100%, 22%);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+.attribution a:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sedan-div {
+    border-radius: 9px 9px 0 0;
+  }
+  .luxury-div {
+    border-radius: 0 0 9px 9px;
+  }
+}
